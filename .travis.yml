@@ -5,6 +5,5 @@ services:
 
 script:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - sbt docker:stage
   - docker build -t divanvisagie/sbt .
   - docker push divanvisagie/sbt
