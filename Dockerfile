@@ -1,5 +1,5 @@
 FROM java:latest
-
+MAINTAINER visagiedivan@gmail.com
 RUN \
     echo "===> Add bintray repository..." && \
     echo "deb http://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list && \
